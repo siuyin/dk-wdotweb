@@ -1,0 +1,3 @@
+#!/bin/bash
+#ruby -W0 ~/bin/wdot.rb < $1 | dot -Gsplines=ortho -Gnodesep=0.5 -Granksep=0.5 -Tpng -o `basename $1 .wdot`.png
+ruby -W0 /home/app/wdotweb/wdot.rb < public/wdotsrc.wdot | dot -Gsplines=true -Gnodesep=0.5 -Granksep=0.5 -Tpng -o public/wdot.png
